@@ -35,10 +35,16 @@
               </a>
             </div>
         </div>   -->
-        <div class="background">
-            <div class="bg-text">
-                <h1>E-BOOK ONLINE PLN APD BALIKPAPAN</h1>
+        <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">E-BOOK ONLINE PLN APD BALIKPAPAN</h1>
                 <h2>Free Download E-Book</h2>
+                <form class="form-group" action="" method="">
+                    <input type="text" class="form-input" placeholder="SEARCH BOOK">
+                    <button type="submit" class="btn btn-primary btn-form">SEARCH</button>
+                </form>
             </div>
         </div>
+    </header>
 @endsection
