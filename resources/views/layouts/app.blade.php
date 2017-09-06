@@ -15,8 +15,8 @@
     
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -39,9 +39,12 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
+                    @auth
                         <li><a href="/home">Home</a></li>
                         <li><a href="/daftar-buku">Daftar Buku</a></li>
                         <li><a href="/buku/tambah-buku">Tambah Buku</a></li>
+                    @else
+                    @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -114,16 +117,26 @@
             </div>
         </div>
         <div class="second-bar">
-        <div class="container">
+            <div class="container">
                 <p>&copy E-Book Online APD 2017</p>
+            </div>
         </div>
-    </div>
-</footer>
-<!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
 
     
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript">
+        function PreviewImage() {
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+        oFReader.onload = function(oFREvent) {
+            document.getElementById("uploadPreview").src = oFREvent.target.result;
+        };
+        };
+    </script>
 </body>
 </html>

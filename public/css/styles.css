@@ -1,0 +1,319 @@
+html,
+body {
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.icon-bar {
+    color: black;
+    border-color: black;
+    background-color: black;
+}
+
+.btn:hover {
+    transition-duration: 0.7s;
+}
+
+/* Navbar */
+
+.navbar {
+    line-height: 1.2em;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.navbar-nav>li>a,
+.navbar-header>a {
+    font-weight: 600;
+}
+
+.navbar-light {
+    background-color: #fff;
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 730px;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+
+/* Navbar */
+
+
+/* Welcome Page */
+
+header {
+    width: 100%;
+    height: 45vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /* background-attachment: fixed; */
+    background-image: url('../image/background.jpg');
+    text-align: center;
+    color: white;
+}
+
+header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;
+    top: -13%;
+}
+
+header .header-content .header-content-inner h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+header .header-content .header-content-inner h2 {
+    font-weight: 500;
+}
+
+.form-search {
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    padding: .7rem;
+    color: #000;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid #999;
+}
+
+.form-group .btn-form {
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 2rem;
+    box-shadow: 1px 2px rgba(0, 94, 255, 0.50);
+}
+
+@media (min-width: 767px) {
+    header {
+        height: 60vh;
+    }
+    header .header-content {
+        position: absolute;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 0 50px;
+    }
+    header .header-content .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header .header-content .header-content-inner h1 {
+        font-size: 60px;
+    }
+    .form-group .btn-form {
+        width: 20%;
+    }
+}
+
+.ebook img {
+    height: 400px;
+    width: 100%;
+}
+
+.ebook-header {
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 1024px) {
+    .col-sm-2 {
+        width: 33.33333333%;
+        margin-bottom: 10px;
+    }
+    .ebook img {
+        width: 100%:
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .col-sm-2 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .col-sm-2 {
+        width: 100%;
+    }
+}
+
+/* Welcome Page */
+
+
+/* Login Page */
+
+.hero-content {
+    background: linear-gradient(180deg, #2F77A0 0, #124B6D);
+    background-image: linear-gradient(#176EA0 0px, #124B6D);
+    color: #fff;
+    padding: 100px;
+}
+
+.hero-content img {
+    width: 50%;
+    margin-left: 100px;
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -webkit-transition: property duration timing-function delay;
+    -moz-transition: property duration timing-function delay;
+    transition: property duration timing-function delay;
+}
+
+.section-content {
+    margin-top: 30px;
+}
+
+.form-input {
+    position: relative;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 5px;
+}
+
+.form-input label {
+    display: block;
+}
+
+.form-input input {
+    border: none;
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 5px 0;
+}
+
+.form-input input:focus {
+    outline: none;
+    font-size: 2rem;
+}
+
+.form-input:hover {
+    padding: 0.5rem 0.6rem;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.20);
+}
+
+.form-group {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-content {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-content .col-sm-6 {
+        width: 100%;
+    }
+    .hero-content img {
+        display: none;
+    }
+}
+
+
+/* Login Page */
+
+
+/* Footer */
+
+#myFooter {
+    background: linear-gradient(180deg, #2F77A0 0, #124B6D);
+    background-image: linear-gradient(#176EA0 0px, #124B6D);
+    color: #ddd;
+    margin-top: 5px;
+    padding-top: 30px;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .info {
+    text-align: justify;
+    color: #ddd;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter .logo {
+    margin-top: 10px;
+}
+
+#myFooter .second-bar .logo a {
+    color: black;
+    font-size: 28px;
+    float: left;
+    font-weight: bold;
+    line-height: 68px;
+    margin: 0;
+    padding: 0;
+}
+
+#myFooter a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+#myFooter .second-bar {
+    text-align: center;
+    background-color: #fff;
+    text-align: center;
+}
+
+#myFooter .second-bar p {
+    font-size: 17px;
+    color: #333;
+    padding: 8px;
+    margin-bottom: 0;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter,
+    #myFooter .info,
+    #myFooter .second-bar {
+        text-align: left;
+    }
+}
+
+
+/* Footer */
