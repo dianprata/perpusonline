@@ -124,8 +124,30 @@ header .header-content .header-content-inner h2 {
 }
 
 .ebook img {
-    height: 400px;
     width: 100%;
+    height: 400px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.ebook img:hover {
+    box-shadow: 2px 2px 60px rgba(0, 0, 0, 0.60);
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
 }
 
 .ebook-header {
@@ -151,6 +173,23 @@ header .header-content .header-content-inner h2 {
 @media screen and (max-width: 767px) {
     .col-sm-2 {
         width: 100%;
+    }
+    .ebook img {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1); 
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1); 
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+    
+    .ebook img:hover {
+        box-shadow: 2px 2px 60px rgba(0, 0, 0, 0.60);
     }
 }
 

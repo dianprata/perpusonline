@@ -48,9 +48,9 @@
           </div>
         </header>
 
-      <div class="container-fluid ebook">
+      <div class="container-fluid">
         <h1 class="ebook-header">E-Book Terbaru</h1>
-        <div class="row">
+        <div class="row ebook">
             <div class="col-sm-2">
               <img src="/image/COVER-BUKU-PANDUAN-1.jpg" alt="">
             </div>
