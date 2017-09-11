@@ -51,24 +51,13 @@
       <div class="container-fluid">
         <h1 class="ebook-header">E-Book Terbaru</h1>
         <div class="row ebook">
+          @foreach($buku as $key => $value)
+
             <div class="col-sm-2">
-              <img src="/image/COVER-BUKU-PANDUAN-1.jpg" alt="">
+              <a href="{{ URL::to('file_buku/' . $value->file_buku) }}"><img src="{{ URL::to('cover/' . $value->cover) }}" alt=""></a>
             </div>
-            <div class="col-sm-2">
-              <img src="/image/cover-buku-pedoman.jpg" alt="">
-            </div>
-            <div class="col-sm-2">
-              <img src="/image/cover-buku-laporan-tahunan-stmik-internal.jpg" alt="">
-            </div>
-            <div class="col-sm-2">
-              <img src="/image/COVER-BUKU-PANDUAN-1.jpg" alt="">
-            </div>
-            <div class="col-sm-2">
-              <img src="/image/cover-buku-pedoman.jpg" alt="">
-            </div>
-            <div class="col-sm-2">
-              <img src="/image/cover-buku-laporan-tahunan-stmik-internal.jpg" alt="">
-            </div>
+          @endforeach
+
         </div>    
       </div>
 @endsection

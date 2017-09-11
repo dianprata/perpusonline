@@ -18,6 +18,8 @@ class User extends Authenticatable
         'name', 'email', 'password',
     ];
 
+    protected $table = 'users';
+
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -32,6 +34,10 @@ class User extends Authenticatable
       return $this
         ->belongsToMany('App\Role')
         ->withTimestamps();
+    }
+
+    public function buku(){
+      return $this->hasOne('App\Buku');
     }
 
     public function authorizeRoles($roles)

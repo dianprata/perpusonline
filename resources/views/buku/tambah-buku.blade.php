@@ -9,8 +9,9 @@
                     <div class="panel-heading text-center">TAMBAH BUKU</div>
 
                     <div class="panel-body">
-                        <form action="" method="POST" class="form-horizontal" enctype="multipart/form-data">
+                        <form action="/buku/store" method="POST" class="form-horizontal" enctype="multipart/form-data">
                             <div class="form-group">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <label for="nama" class="col-sm-2 control-label">Nama</label>
                                 <div class="col-sm-9">
                                     <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama">       
@@ -49,7 +50,7 @@
                             <div class="form-group">
                                 <label for="file" class="col-sm-2 control-label">File Buku</label>
                                 <div class="col-sm-9">
-                                    <input type="file" id="file" name="file" class="form-control" placeholder="File Buku">       
+                                    <input type="file" id="file" name="file_buku" class="form-control" placeholder="File Buku">       
                                 </div>                            
                             </div>
                             <div class="form-group">

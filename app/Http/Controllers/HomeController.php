@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Buku;
 
 class HomeController extends Controller
 {
@@ -19,7 +20,8 @@ class HomeController extends Controller
     public function index(Request $request)
     {
       $request->user()->authorizeRoles(['employee', 'manager']);
-      return view('home');
+      $buku = Buku::get();
+      return view('home', ['buku' => $buku]);
     }
 
     /**
